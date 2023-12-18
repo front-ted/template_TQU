@@ -3,19 +3,20 @@
 	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
 */
 :root{
-	--bg-gradiente-primario: rgb(11,58,74);
-	--gradiente-primario: linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%);
+	--bg-gradiente-primario: #1A4480;
+	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%) border-box;
+	linear-gradient(80deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%) border-box;
 
-	--bg-gradiente-secundario: rgb(80,215,226);
-	--gradiente-secundario: linear-gradient(60deg, rgba(80,215,226,1) 0%, rgba(46,137,151,1) 18%, rgba(11,59,75,1) 100%);
+	--bg-gradiente-secundario: #92ACCE;
+	--gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%);
 
-	--cor-primaria: #1e8cb1;
-	--cor-secundaria: #e0a945;
+	--cor-primaria: #92ACCE;
+	--cor-secundaria: #CF9993;
+	--cor-terciaria: #1A4480;
 
-	--gradiente-fundo: #684293;
+	--gradiente-fundo: #92ACCE;
 	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #C489BB 0%, transparent 60%), 
 	radial-gradient(farthest-corner at 100% 100%, #45B4E8 0%, transparent 60%),
 	radial-gradient(farthest-corner at 0% 100%, #BFE2DF 0%, transparent 50%);
@@ -81,5 +82,17 @@
 .hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link,
 thead, .accordion-button, .accordion-button:not(.collapsed){background-color: var(--cor-primaria);}
 
+td{
+	border-left-color: #fff;
+	border-bottom-color: var(--cor-primaria);
+}
+.page-link{color: var(--cor-primaria)}
+.page-item.active .page-link, .list-group-item.active{
+	background: var(--cor-primaria);
+	border-color: var(--cor-primaria)
+}
+
 /*elementos que levam a cor secundária*/
 mark{background: var(--cor-secundaria);}
+
+/*elementos que levam a cor terciária*/

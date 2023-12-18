@@ -101,7 +101,7 @@ li p a{
   padding-top: 0;
 }
 .drag-column h3 {
-  background: var(--bg-gradiente-primario);
+  background: #1A4480;
   width: 100%;
   margin-top: 0;
   color: white;
@@ -189,7 +189,7 @@ li p a{
   border-radius: 20px;
   border: 0;
   margin-top: .5rem;
-  background-color: #2d6475;
+  background-color: #1A4480;
   font-weight: 500;
   background-image: url(../../assets/printer.svg);
   background-repeat: no-repeat;
@@ -198,7 +198,7 @@ li p a{
 .btMenuPrint:hover{
   transform: scale(1.1) ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
-  background-color: #278dac;
+  background-color: #92ACCE;
 }
 .menuPrint{
   border: 0;
@@ -417,7 +417,7 @@ ul {
 
 .dropdown-bubble .dropdown-menu {
   margin-top: 0.8em;
-  background-color: #808DA3;
+  background-color: #92ACCE;
   color: #ffffff;
   min-width: 108px;
   padding: 0 9px;
@@ -544,7 +544,7 @@ ul {
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 7px solid #808DA3;
+  border-top: 7px solid #92ACCE;
   position: absolute;
   top: 63px;
   right: 0;
@@ -564,7 +564,16 @@ ul {
 }
 
 .voltar-topo{
-  margin-top: 20px;
+  background: url('../../assets/bt_topo.svg');
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+.referencias{
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin-left: 20px;
 }
 
 .mover-fazer{
@@ -641,18 +650,18 @@ ul {
   }
 }
 
-/* novo template - LP */
+/* CÍRCULOS */
 .circulo-1 {
-  position: absolute;
-  left: -250px;
-  z-index: 3;
-}
-.circulo-1 svg {
+  background: url('../../../assets/images/asset_circulo.svg');
   height: 500px;
   width: 500px;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  z-index: 3;
 }
 .circulo-2 {
-  background-color: #fed06e;
+  background-color: #92ACCE;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -661,12 +670,15 @@ ul {
   left: -125px;
 }
 .circulo-3 {
+  background: url('../../../assets/images/asset_circulo.svg');
   position: absolute;
-  bottom: -250px;
-  right: -140px;
+  height: 500px;
+  width: 500px;
+  bottom: -450px;
+  right: -270px;
 }
 .circulo-4 {
-  background-color: #fed06e;
+  background-color: #92ACCE;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -686,7 +698,7 @@ ul {
     z-index: 9;
   }
   .circulo-1 {
-    left: -300px;
+    left: -250px;
   }
   .circulo-2 {
     top: 150px;
