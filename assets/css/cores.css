@@ -96,3 +96,5 @@ td{
 mark{background: var(--cor-secundaria);}
 
 /*elementos que levam a cor terciária*/
+.bt-hamburguer, 
+.offcanvas-header .bt-fecharmenu{background: var(--cor-terciaria);}

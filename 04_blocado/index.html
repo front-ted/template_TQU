@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="../assets/css/template.css">
     
     </head>
-    <body>
+    <body class="bg-claro">
         <!-- Preloader OBRIGATÓRIO -->
         <div class="preloader">
             <div class="anim"></div>
@@ -39,12 +39,14 @@
         <header id="topo">
             <div class="topo-logo">
                 <div class="container">
-                    <h1 id="nome-curso" class="only-print">Nome do curso</h1>    
+                    <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1> 
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>     
                 </div>
             </div>
         </header>
         <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">       
+        <section id="booklet">  
+            <div class="layer-preta no-print"></div>       
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
                 <div class="pagina">
@@ -75,6 +77,7 @@
                             </figcaption>
                         </figure>
                     </div>
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
                 </div> 
             </section>
             <!-- Paginação-->
