@@ -16,8 +16,6 @@
         <link rel="stylesheet" href="../assets/css/hover-min.css" />
         <!--Splide - slideshow-->
         <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Print -->
-        <link rel="stylesheet" href="../assets/css/print.css">
         <!-- Preloader -->
         <link rel="stylesheet" href="../assets/css/preloader.css">
         <!-- Áudio customizado -->
@@ -205,8 +203,8 @@
                     <p><b>Dicas de boa prática</b>: quando solicitado na análise didática, incluir referência, bem como indicar a ideia do que se trata.</p>
                     <!--a estrutura das figuras deve ser essa, com essas classes para manter o padrão de funcionamento e estética, caso precise adicione uma nova classe para estilo específico-->
                     <figure class="my-5">
-                        <div class="figure-img mx-auto mb-4">
-                            <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
+                        <div class="figure-img mb-4">
+                            <img class="img-fluid d-block borda-colorida mx-auto" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
                         </div>
                         <figcaption class="figure-caption text-center">Legenda e fonte</figcaption>
                     </figure>
@@ -546,7 +544,6 @@
                             <div class="bg-podcast no-print">
                                 <div class="d-flex justify-content-center flex-column align-items-center">
                                     <p>Ouça o <i>podcast</i> a seguir.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     <div class="audio-player no-print">
                                         <audio>
                                             <source src="podcast/podcast.mp3" type="audio/mpeg">
@@ -568,6 +565,49 @@
                                 </div>
                             </div>
                             <div class="modal fade no-print" id="modal-transcricao-audio1" tabindex="-1"
+                                    aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content no-print">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <h3>Áudio</h3>
+                            <div class="bg-podcast no-print audio">
+                                <div class="d-flex justify-content-center flex-column align-items-center">
+                                    <div class="audio-player no-print">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <div class="row">
+                                            <div class="timestamp">00:00 | 00:00</div>
+                                            <div class="barra">
+                                                <input type="range" value="0" max="4140" step="any">
+                                            </div>
+                                            <div class="botoes">
+                                                <button title="Tocar" class="btn-play btn-player"></button>
+                                                <button title="Pause" class="btn-pause btn-player"></button>
+                                                <button title="Transcrição" data-bs-toggle="modal"
+                                                    data-bs-target="#modal-transcricao-audio2"
+                                                    class="btn-transcricao btn-player"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal-transcricao-audio2" tabindex="-1"
                                     aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content no-print">
