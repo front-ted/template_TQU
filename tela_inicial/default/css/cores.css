@@ -38,6 +38,7 @@
 .circulo-2, .circulo-4 {
 	background: var(--cor-primaria);
 }
-.btMenuPrint, .drag-column h3, .menuPrint.dropdown-menu li a::before{background-color: var(--cor-terciaria);}
-.btMenuPrint:hover, .menuPrint.dropdown-menu li a:hover::before,
+.btMenuPrint, .drag-column h3{background-color: var(--cor-terciaria);}
+.btMenuPrint:hover, 
+.menuPrint.dropdown-menu li a:hover::before,
 .dropdown-bubble .dropdown-menu{background-color: var(--cor-primaria);}
