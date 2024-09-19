@@ -12,6 +12,8 @@
 	--bg-gradiente-secundario: #92ACCE;
 	--gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%);
 
+	--gradiente-referencias: radial-gradient(circle at 0 10%, #92ACCE 0, transparent 50%), radial-gradient(circle at 40% 150%, #CF9993 0, #fff 60%);
+
 	--cor-primaria: #92ACCE;
 	--cor-secundaria: #CF9993;
 	--cor-terciaria: #1A4480;
@@ -31,6 +33,10 @@
 	color: #fff;
 }
 
+/*página de referências*/
+.referencias{
+    background: var(--gradiente-referencias);
+}
 
 /*elementos que levam gradiente primário - três cores*/
 #topo, .prognroll-bar{

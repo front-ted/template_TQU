@@ -12,13 +12,13 @@
     font-family: "figtree-bold";
     src: url("../fonts/Figtree-Bold.ttf");
 }
+@font-face {
+    font-family: "italiana";
+    src: url("../fonts/Italiana-Regular.ttf");
+}
 
 body {
     position: relative;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: center !important;
-	background-attachment: fixed !important;
 	height: auto;
 	overflow-x: hidden;
     font-size: 20px;
@@ -614,8 +614,21 @@ tbody td:first-child{border-left: 0;}
 .bg-escuro .game-associar-colunas p{color: #000;}
 
 /*MODO ESCURO*/
+
+/*CITAÇÃO*/
 .citacao {padding-left: 20%;}
 .citacao *{font-size: .9em;}
+
+/*REFERÊNCIAS*/
+.referencias #booklet{
+    background-image: url('../images/elemento_dir.png'), url('../images/elemento_esq.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+}
+.referencias h2, .referencias h3, .referencias h4{
+    font-family: italiana;
+}
 
 @media screen and (max-width: 1200px){
     h2{margin-left: 0;}
@@ -625,6 +638,7 @@ tbody td:first-child{border-left: 0;}
     .grafismo::after{
         right: -30px;
     }
+    .referencias #booklet{background-image: none;}
 }
 @media screen and (max-width: 780px){
     p, li, th, td, a, 
