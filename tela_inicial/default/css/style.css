@@ -19,11 +19,7 @@
 }
 
 body {
-  background: var(--gradiente-primario);
-  background-repeat: repeat;
   background-attachment: fixed;
-  /* background-size: 100%;
-  background-position: center; */
   width: 100%;
   height: 100vh;
   color: white;
@@ -32,6 +28,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -88,7 +85,7 @@ li a{
 }
 
 .grupo {
-  background: #d4eeee;
+  background: rgba(255,255,255,.9);
   border-radius: 10px;
   display: flex;
   margin-bottom: 40px;
@@ -103,7 +100,6 @@ li a{
   padding-top: 0;
 }
 .drag-column h3 {
-  background: var(--bg-gradiente-primario);
   width: 100%;
   margin-top: 0;
   color: white;
@@ -135,6 +131,7 @@ li a{
   padding-left: 10px;
   font-size: .9em;
   padding-right: 55px;
+  text-decoration: none;
 }
 
 .border{
@@ -193,9 +190,11 @@ li a{
   font-size: 1.6rem;
   border-radius: 20px;
   border: 0;
+  float: right;
   margin-top: .5rem;
-  background-color: #2d6475;
   font-weight: 500;
+  font-size: 16px;
+  color: #fff;
   background-image: url(../../assets/printer.svg);
   background-repeat: no-repeat;
   background-position: 10px center;
@@ -203,7 +202,6 @@ li a{
 .btMenuPrint:hover{
   transform: scale(1.1) ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
-  background-color: #278dac;
 }
 .menuPrint{
   border: 0;
@@ -219,7 +217,6 @@ li a{
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  background-color: #2d6475;
   border-radius: 15px;
   background-position: center center;
   background-size: 15px;
@@ -227,13 +224,14 @@ li a{
   margin-right: 5px;
   margin-left: -10px;  
 }
-.menuPrint.dropdown-menu li a:hover::before{
-  background-color: #278dac;
-}
 ul.menuPrint.dropdown-menu:before{
   display: none;
 }
 
+.referencias{
+  height: 80px;
+  width: 200px;
+}
 
 @keyframes seta {
   0% {
@@ -444,14 +442,13 @@ ul {
 
 .dropdown-bubble .dropdown-menu {
   margin-top: 0.8em;
-  background-color: #808DA3;
   color: #ffffff;
   min-width: 108px;
   padding: 0 9px;
   border-radius: 6px;
   right: 0;
   bottom: 50px;
-  height: 65px;  
+  height: 74px;  
 }
 .dropdown.dropdown-bubble{
   background: url('../../assets/direcionais.png') no-repeat right 10px bottom 10px;
@@ -574,9 +571,9 @@ ul {
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 7px solid #808DA3;
+  border-top: 7px solid var(--cor-primaria);
   position: absolute;
-  top: 63px;
+  top: 72px;
   right: 0;
 }
 .dropdown-menu li{
@@ -594,7 +591,8 @@ ul {
 }
 
 .voltar-topo{
-  margin-top: 20px;
+  height: 50px;
+  width: 50px;
 }
 
 .mover-fazer{
@@ -670,12 +668,17 @@ ul {
   left: -250px;
   z-index: 3;
 }
-.circulo-1 svg {
+.circulo-1 {
+  position: absolute;
+  left: -250px;
+  z-index: 3;
+  width: 525px;
   height: 500px;
-  width: 500px;
+  background: url(../../../assets/images/asset_circulo.svg) no-repeat;
+  background-size: cover;
+  top: -55px;
 }
 .circulo-2 {
-  background-color: #fed06e;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -688,8 +691,16 @@ ul {
   bottom: -250px;
   right: -140px;
 }
+.circulo-3 {
+  background: url(../../../assets/images/asset_circulo.svg) no-repeat;
+  position: absolute;
+  width: 240px;
+  height: 430px;
+  bottom: -385px;
+  right: -60px;
+  background-size: cover;
+}
 .circulo-4 {
-  background-color: #fed06e;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -709,10 +720,10 @@ ul {
     z-index: 9;
   }
   .circulo-1 {
-    left: -300px;
+    left: -325px;
   }
   .circulo-2 {
-    top: 150px;
+    top: 200px;
     z-index: 2;
   }
   .circulo-4 {
