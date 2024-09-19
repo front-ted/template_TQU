@@ -3,25 +3,26 @@
 	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
 */
 :root{
-	--bg-gradiente-primario: #1A4480;
-	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%);
-
-	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%) border-box;
-
-	--bg-gradiente-secundario: #92ACCE;
-	--gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%);
-
-	--gradiente-referencias: radial-gradient(circle at 0 10%, #92ACCE 0, transparent 50%), radial-gradient(circle at 40% 150%, #CF9993 0, #fff 60%);
-
 	--cor-primaria: #92ACCE;
 	--cor-secundaria: #CF9993;
 	--cor-terciaria: #1A4480;
 
-	--gradiente-fundo: #92ACCE;
-	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #C489BB 0%, transparent 60%), 
-	radial-gradient(farthest-corner at 100% 100%, #45B4E8 0%, transparent 60%),
-	radial-gradient(farthest-corner at 0% 100%, #BFE2DF 0%, transparent 50%);
+	--bg-gradiente-topo: var(--cor-terciaria);
+	--gradiente-topo: linear-gradient(90deg, var(--cor-terciaria) 0%, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
+
+	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
+	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
+
+	--bg-gradiente-secundario: var(--cor-primaria);
+	--gradiente-secundario: linear-gradient(60deg, var(--cor-primaria) 0%, var(--cor-secundaria) 18%, var(--cor-terciaria) 100%);
+
+	--gradiente-referencias: radial-gradient(circle at 0 10%, var(--cor-primaria) 0, transparent 50%), radial-gradient(circle at 40% 150%, var(--cor-secundaria) 0, #fff 60%);
+
+
+	--gradiente-fundo: var(--cor-terciaria);
+	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, var(--cor-terciaria) 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 0 100%, var(--cor-secundaria) 0%, transparent 60%), 
+	linear-gradient(180deg, var(--cor-primaria) 0%, #fff 100%);
 }
 
 /*layout com fundo gradiente*/
@@ -40,8 +41,8 @@
 
 /*elementos que levam gradiente primário - três cores*/
 #topo, .prognroll-bar{
-	background: var(--bg-gradiente-primario);
-	background: var(--gradiente-primario);
+	background: var(--bg-gradiente-topo);
+	background: var(--gradiente-topo);
 }
 .borda-colorida, .destaque.borda-colorida{
 	background: var(--gradiente-borda);
