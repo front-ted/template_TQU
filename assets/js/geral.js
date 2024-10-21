@@ -78,3 +78,16 @@ $(".btn-tema_pagina").click(function () {
 });
 
 // MODO ESCURO
+
+// caixas expansiveis
+$('.caixa-container button.btpluscaixa').click(function(){
+  let caixa = $(this).prev()
+  if(caixa.hasClass('aberta')){
+      caixa.removeClass('aberta')
+      $(this).css('background-image', 'url("../assets/images/bt_mais.svg")')
+  } else {
+      caixa.addClass('aberta')
+      $(this).css('background-image', 'url("../assets/images/bt_menos.svg")')
+  }
+})
+
