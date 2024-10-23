@@ -11,7 +11,7 @@
 	--gradiente-topo: linear-gradient(90deg, var(--cor-terciaria) 0%, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
+	linear-gradient(80deg, var(--cor-terciaria) 10%, var(--cor-secundaria) 92%) border-box;
 
 	--bg-gradiente-menu: var(--cor-terciaria);
 	--gradiente-menu: radial-gradient(farthest-corner at 0 0, var(--cor-terciaria) 0%, transparent 60%), 
@@ -49,9 +49,12 @@
 	background: var(--gradiente-borda);
 	color: #000;
 }
+.destaque.gradiente{
+	background: linear-gradient(270deg, var(--cor-secundaria) 0%, var(--cor-terciaria) 100%);
+}
 
 /*elementos que levam gradiente secundário - duas cores*/
-.modal-header, .destaque.gradiente, 
+.modal-header,
 .multipla-escolha button::before, .game-titulo,
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,

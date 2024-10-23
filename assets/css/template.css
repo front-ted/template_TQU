@@ -173,15 +173,15 @@ tbody td:first-child{border-left: 0;}
     height: 32px;
     width: 31px;
     opacity: 1;
-    bottom: 0;
+    bottom: -22px;
     border: none;
 }
 .carousel-control-prev{
-    background: url('../images/seta_esq.svg') no-repeat;
+    background: url('../images/esquerda.svg') no-repeat;
     left: -130px;
 }
 .carousel-control-next{
-    background: url('../images/seta_dir.svg') no-repeat;
+    background: url('../images/direita.svg') no-repeat;
     right: -130px;
 }
 .carousel-indicators{
@@ -232,11 +232,11 @@ tbody td:first-child{border-left: 0;}
 }
 .splide__arrows svg{display: none;}
 .splide__arrow--prev{
-    background: url('../images/seta_esq.svg') no-repeat;
+    background: url('../images/esquerda.svg') no-repeat;
     left: calc(25% - 100px);
 }
 .splide__arrow--next{
-    background: url('../images/seta_dir.svg') no-repeat;
+    background: url('../images/direita.svg') no-repeat;
     right: calc(25% - 100px);
 }
 .splide__pagination{
