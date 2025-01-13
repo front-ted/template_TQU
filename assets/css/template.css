@@ -17,6 +17,11 @@
     src: url("../fonts/Italiana-Regular.ttf");
 }
 
+@font-face {
+    font-family: "figtree-bolditalic";
+    src: url("../fonts/Figtree-BoldItalic.ttf");
+}
+
 body {
     position: relative;
 	height: auto;
@@ -68,6 +73,9 @@ h3{
 }
 h4{font-size: 1.4em;}
 h5{font-size: 1.2em;}
+h1 i, h2 i, h3 i, h4 i, h5 i{
+    font-family: figtree-bolditalic;
+}
 p, li, th, td, a, 
 .figure-caption, .botao,
 .tab-pane {
